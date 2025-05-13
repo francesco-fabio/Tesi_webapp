@@ -49,6 +49,9 @@ the first service creates the database when it tries to use it in case it doesn'
 
 After downloading the modules, run `npm -i` to add the dependencies.
 
+P.S.
+In case you want to test the WebApp but you don't have an ESP32 or a MAX30102, the service named `mockSensor.js` is designed to simulate a sensor that interacts with the WebApp.
+
 ## Frontend - tested using LiveServer and Google Chrome
 After the MySQL server and the two services that make the backend are up and running, open the index.html file to start using the WebApp
 
