@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Oximeter</title>
+    <link rel="stylesheet" href="/frontend/css/indexStyle.css" />
+  </head>
+  <body>
+    <div class="menu_bar">
+      <a href="./index.html">Home</a>
+      <a id="rep_pg" href="./report.html">Report</a>
+    </div>
+    <div><h1>Misura la tua saturazione</h1></div>
+    <div>
+      <label class="lbl" for="SpO2">SpO2: </label><a id="spo2">0</a>
+      <div><label class="lbl" for="HR">HR: </label><a id="hr">0</a></div>
+    </div>
+
+    <div><button type="button" id="activator">Start</button></div>
+
+    <input type="checkbox" id="record" name="record" value="record" disabled />
+    <label for="record">Record</label><br />
+
+    <script src="/frontend/scripts/sensorController.js"></script>
+  </body>
+</html>

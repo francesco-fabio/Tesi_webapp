@@ -1,0 +1,89 @@
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 1rem;
+  background-color: #f5f7fa;
+  color: #333;
+  text-align: center;
+}
+
+/* Menu bar */
+.menu_bar {
+  background-color: #4a90e2;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 0 0 10px 10px;
+}
+
+.menu_bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.menu_bar a:hover {
+  opacity: 0.8;
+}
+
+/* Titolo */
+h1 {
+  margin: 2rem 0 1rem 0;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Dati visualizzati */
+#spo2,
+#hr,
+#separator {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.lbl {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Pulsante */
+button#activator {
+  margin: 2rem auto;
+  padding: 0.75rem 1.5rem;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button#activator:hover {
+  background-color: #357ac9;
+}
+
+/* Checkbox + label */
+input[type="checkbox"] {
+  margin-top: 1rem;
+  transform: scale(1.2);
+}
+
+label[for="record"] {
+  margin-left: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}

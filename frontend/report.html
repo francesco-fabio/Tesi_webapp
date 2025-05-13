@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consulta il tuo storico dei dati</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/frontend/css/reportStyle.css" />
+</head>
+<body>
+  <div class="menu_bar">
+    <a href="./index.html">Home</a>
+    <a href="./report.html">Report</a>
+  </div>
+
+  <div class="sticky-select">
+    <label for="recordings">Seleziona la registrazione:</label>
+    <select name="recordings" id="recordings">
+      <option value="default">Nessuna</option>
+    </select>
+  </div>
+
+  <!-- Container per medie -->
+  <div id="avg_container">
+    <div>
+      <label for="spo2_avg">Media SpO2:</label>
+      <span id="spo2_avg">0</span>
+    </div>
+    <div>
+      <label for="hr_avg">Media HR:</label>
+      <span id="hr_avg">0</span>
+    </div>
+    <!-- Legenda -->
+  <div class="legend">
+    <div><p class="legend-item" id="valore_b">Valore buono</p></div>
+    <div><p class="legend-item" id="valore_a">Valore accettabile</p></div>
+    <div><p class="legend-item" id="valore_c">Valore critico</p></div>
+  </div>
+  </div>
+
+  <div>
+    <canvas id="lineChart" width="400" height="200"></canvas>
+  </div>
+
+  <!-- Griglia dei grafici laterali -->
+  <div class="chart-grid">
+    <canvas id="spo2Chart" width="200" height="200"></canvas>
+    <canvas id="hrChart" width="200" height="200"></canvas>
+  </div>
+
+  <script type="module" src="/frontend/scripts/index.js"></script>
+</body>
+</html>

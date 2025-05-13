@@ -1,0 +1,136 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 1rem;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Menu bar */
+.menu_bar {
+  background-color: #4a90e2;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 0 0 10px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu_bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.menu_bar a:hover {
+  opacity: 0.8;
+}
+
+/* Form controls */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.sticky-select {
+  background: #f5f7fa;
+  padding: 1rem;
+  position: sticky;
+  top: 64px; /* altezza approssimativa del menu */
+  z-index: 999;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Media container */
+#avg_container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+#avg_container > div {
+  text-align: center;
+}
+
+#avg_container span {
+  display: block;
+  font-size: 1.5rem;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Legenda */
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  gap: 0.3rem;
+}
+
+.legend-item {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#valore_c {
+  color: red; /* rosso */
+}
+
+#valore_a {
+  color: orange; /* giallo */
+}
+
+#valore_b {
+  color: green; /* verde */
+}
+
+/* Chart container */
+#lineChart {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+/* Griglia dei grafici laterali */
+canvas#spo2Chart,
+canvas#hrChart {
+  width: 100% !important;
+  height: auto !important;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
