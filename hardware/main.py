@@ -36,7 +36,6 @@ async def send_data():
     
 async def get_data():
     global dati
-    #global sensor
     while True:
         sensor.get_spO2(dati)
         if dati[2] == 1:
