@@ -1,0 +1,4 @@
+backend/node_modules
+mock_sensor/node_modules
+db_api/node_modules
+.vscode/
