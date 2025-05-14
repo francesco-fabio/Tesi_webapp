@@ -53,7 +53,7 @@ class SensorController:
         self.redHigh = 0
         self.redLow = 1000000
     
-    def get_spO2(self, dati):
+    def get_values(self, dati):
         # The check() method has to be continuously polled, to check if
         # there are new readings into the sensor's FIFO queue. When new
         # readings are available, this function will put them into the storage.
@@ -110,7 +110,6 @@ class SensorController:
                 #updates the value for the external output
                 dati[0] = spo2Output
                 dati[1] = bpmOutput
-                dati[2] = 1
                 
             #if were not looking for a beat check if we should be looking for a beat
             elif avgChng > 0.5 and not self.lookpeak:

@@ -6,7 +6,7 @@ from websocket_client import WebsocketClient
 from sensor_controller import SensorController
 
 stream = False
-dati = arr.array('i',[0,0,0])
+dati = arr.array('i',[0,0])
 
 async def look_for_received_msg():
     global stream
@@ -37,12 +37,8 @@ async def send_data():
 async def get_data():
     global dati
     while True:
-        sensor.get_spO2(dati)
-        if dati[2] == 1:
-            spo2 = dati[0]
-            hr = dati[1]
-            dati[2] = 0
-            print(f"SpO2={dati[0]}, HR={dati[1]}")
+        sensor.get_values(dati)
+        print(f"SpO2={dati[0]}, HR={dati[1]}")
 
         await asyncio.sleep(0.001)
 
