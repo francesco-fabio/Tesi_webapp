@@ -1,5 +1,5 @@
 # Tesi_webapp
-bachelor degree project in computer engineering. The goal of the project is to show in a practical way how to use IoT devices in the field of telemedicine. The project consists of a smart oximeter that collects the data, a front-end that displays the data and a backend that allows the communication between the microcontroller and the front-end.
+This is a bachelor degree project in computer engineering at the UNINETTUNO university. The goal of the project is to show in a practical way how to use IoT devices in the field of telemedicine. The project consists of a smart oximeter that collects the data, a front-end that displays the data and a backend that allows the communication between the microcontroller and the front-end.
 
 In the folder named `extras` you can find a full copy of the thesis and two videos that show how the infrastructure works.
 
